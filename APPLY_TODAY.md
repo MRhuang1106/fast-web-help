@@ -12,6 +12,7 @@ This is the short action list for getting the first paid reply.
 4. Send 10 direct outreach messages using `OUTREACH_MESSAGES.md`.
 5. Track every lead in `LEAD_TRACKER.csv`.
 6. Use `CLOSING_AND_PAYMENT.md` as soon as anyone replies.
+7. Use `FOLLOW_UP_SYSTEM.md` and `SALES_PIPELINE.csv` to track replies and follow-ups.
 
 ## Why this order
 
@@ -38,6 +39,7 @@ Keep the first job narrow. The goal is a real paid client and a usable testimoni
 - Upwork target list: `UPWORK_TARGETS_2026-07-05.md`
 - Custom proposals: `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md`
 - Closing and payment: `CLOSING_AND_PAYMENT.md`
+- Follow-up system: `FOLLOW_UP_SYSTEM.md`
 
 ## Skip for now
 
@@ -56,4 +58,3 @@ I can do a first usable version within 24 hours for $49. Scope would include one
 ```
 
 Then ask for materials and payment/escrow.
-

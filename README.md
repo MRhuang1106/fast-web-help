@@ -40,6 +40,7 @@ Payment details and private contact are confirmed after scope is accepted.
 - Platform profile copy: `PLATFORM_PROFILE_COPY.md`
 - Custom proposals: `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md`
 - Closing and payment: `CLOSING_AND_PAYMENT.md`
+- Follow-up system: `FOLLOW_UP_SYSTEM.md`
 - Delivery workflow: `DELIVERY_WORKFLOW.md`
 - Local preflight: `preflight_check.ps1`
 - Live verification: `verify_live_site.ps1`
