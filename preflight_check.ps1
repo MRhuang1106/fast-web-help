@@ -50,7 +50,7 @@ $badPatterns = @(
 )
 
 $files = Get-ChildItem -Recurse -File | Where-Object {
-  $_.FullName -notmatch '[\\/]\.git[\\/]'
+  $_.FullName -notmatch '[\\/]\.git[\\/]' -and $_.Name -ne "preflight_check.ps1"
 }
 
 foreach ($file in $files) {
