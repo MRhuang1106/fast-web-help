@@ -96,3 +96,18 @@ Included:
 Please send the one small revision you want me to handle. If everything looks good, I would also appreciate a short testimonial I can quote on my service page.
 ```
 
+## After payment
+
+Use `DELIVERY_WORKFLOW.md` to create the client workspace and handoff files.
+
+For a one-page task:
+
+```powershell
+.\new_client_project.ps1 -ClientSlug client-name -Type starter-page
+```
+
+For a README/demo refresh:
+
+```powershell
+.\new_client_project.ps1 -ClientSlug client-name -Type readme-refresh
+```
