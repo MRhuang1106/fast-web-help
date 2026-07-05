@@ -16,6 +16,18 @@ if (Test-Path ".\preflight_check.ps1") {
 $repo = "MRhuang1106/$RepoName"
 $site = "https://MRhuang1106.github.io/$RepoName/"
 
+function Invoke-Native {
+  param(
+    [string]$FailureMessage,
+    [scriptblock]$Command
+  )
+
+  & $Command
+  if ($LASTEXITCODE -ne 0) {
+    throw $FailureMessage
+  }
+}
+
 if ($DryRun) {
   Write-Host "Dry run only. No remote changes will be made."
   Write-Host "Would create or reuse repo: $repo"
@@ -41,37 +53,33 @@ if (-not (Test-Path ".git")) {
 
 $changes = git status --porcelain
 if ($changes) {
-  git add .
-  git commit -m "Launch fast web help page"
+  Invoke-Native "Could not stage changes." { git add . }
+  Invoke-Native "Could not commit changes." { git commit -m "Launch fast web help page" }
 }
 
 $repoExists = $false
-try {
-  gh repo view $repo | Out-Null
+gh repo view $repo *> $null
+if ($LASTEXITCODE -eq 0) {
   $repoExists = $true
-} catch {
-  $repoExists = $false
 }
 
 if (-not $repoExists) {
-  gh repo create $RepoName --public --description $Description
+  Invoke-Native "Could not create GitHub repo $repo." { gh repo create $repo --public --description $Description }
 }
 
-try {
-  git remote get-url origin | Out-Null
-} catch {
+git remote get-url origin *> $null
+if ($LASTEXITCODE -ne 0) {
   git remote add origin "https://github.com/$repo.git"
 }
 
-git push -u origin main
+Invoke-Native "Could not push main to origin." { git push -u origin main }
 
-try {
-  gh api "repos/$repo/pages" | Out-Null
-} catch {
-  gh api -X POST "repos/$repo/pages" -f source.branch=main -f source.path="/"
+gh api "repos/$repo/pages" *> $null
+if ($LASTEXITCODE -ne 0) {
+  Invoke-Native "Could not enable GitHub Pages for $repo." { gh api -X POST "repos/$repo/pages" -f source.branch=main -f source.path="/" }
 }
 
-gh label create "client-request" --repo $repo --color "0f766e" --description "Potential paid project request" --force
+Invoke-Native "Could not create or update client-request label." { gh label create "client-request" --repo $repo --color "0f766e" --description "Potential paid project request" --force }
 
 Write-Host "Published. GitHub Pages usually appears after 1-3 minutes:"
 Write-Host $site
