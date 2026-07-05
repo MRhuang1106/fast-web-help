@@ -1,12 +1,29 @@
 param(
   [string]$RepoName = "fast-web-help",
-  [string]$Description = "24-hour small website and GitHub Pages help"
+  [string]$Description = "24-hour small website and GitHub Pages help",
+  [switch]$DryRun
 )
 
 $ErrorActionPreference = "Stop"
 
 if (Test-Path ".\preflight_check.ps1") {
   powershell -NoProfile -ExecutionPolicy Bypass -File ".\preflight_check.ps1"
+  if ($LASTEXITCODE -ne 0) {
+    throw "Preflight failed. Fix the reported issue before publishing."
+  }
+}
+
+$repo = "MRhuang1106/$RepoName"
+$site = "https://MRhuang1106.github.io/$RepoName/"
+
+if ($DryRun) {
+  Write-Host "Dry run only. No remote changes will be made."
+  Write-Host "Would create or reuse repo: $repo"
+  Write-Host "Would push branch: main"
+  Write-Host "Would enable GitHub Pages from: main /"
+  Write-Host "Would create/update label: client-request"
+  Write-Host "Expected site: $site"
+  exit 0
 }
 
 if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
@@ -28,7 +45,6 @@ if ($changes) {
   git commit -m "Launch fast web help page"
 }
 
-$repo = "MRhuang1106/$RepoName"
 $repoExists = $false
 try {
   gh repo view $repo | Out-Null
@@ -58,6 +74,6 @@ try {
 gh label create "client-request" --repo $repo --color "0f766e" --description "Potential paid project request" --force
 
 Write-Host "Published. GitHub Pages usually appears after 1-3 minutes:"
-Write-Host "https://MRhuang1106.github.io/$RepoName/"
+Write-Host $site
 Write-Host "Run live verification after a short wait:"
 Write-Host ".\verify_live_site.ps1 -RepoName $RepoName"

@@ -10,6 +10,12 @@ Run the local preflight:
 .\preflight_check.ps1
 ```
 
+Preview remote actions:
+
+```powershell
+.\publish_to_github.ps1 -DryRun
+```
+
 Run the publish script from this folder:
 
 ```powershell

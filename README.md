@@ -44,3 +44,4 @@ Payment details and private contact are confirmed after scope is accepted.
 - Delivery workflow: `DELIVERY_WORKFLOW.md`
 - Local preflight: `preflight_check.ps1`
 - Live verification: `verify_live_site.ps1`
+- Publish authorization: `PUBLISH_AUTHORIZATION_CHECKLIST.md`
