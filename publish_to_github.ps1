@@ -5,6 +5,10 @@ param(
 
 $ErrorActionPreference = "Stop"
 
+if (Test-Path ".\preflight_check.ps1") {
+  powershell -NoProfile -ExecutionPolicy Bypass -File ".\preflight_check.ps1"
+}
+
 if (-not (Get-Command gh -ErrorAction SilentlyContinue)) {
   throw "GitHub CLI is not installed or not on PATH."
 }
@@ -55,3 +59,5 @@ gh label create "client-request" --repo $repo --color "0f766e" --description "Po
 
 Write-Host "Published. GitHub Pages usually appears after 1-3 minutes:"
 Write-Host "https://MRhuang1106.github.io/$RepoName/"
+Write-Host "Run live verification after a short wait:"
+Write-Host ".\verify_live_site.ps1 -RepoName $RepoName"

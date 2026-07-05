@@ -4,6 +4,12 @@ Use this once you authorize publishing the GitHub Pages site.
 
 ## 0-10 minutes: publish
 
+Run the local preflight:
+
+```powershell
+.\preflight_check.ps1
+```
+
 Run the publish script from this folder:
 
 ```powershell
@@ -22,6 +28,12 @@ Check:
 - `Open a request` button works
 - sample cafe page loads
 - sample README refresh page loads
+
+Or run:
+
+```powershell
+.\verify_live_site.ps1
+```
 
 ## 10-25 minutes: open tabs
 
@@ -91,4 +103,3 @@ Stop after:
 - 10 direct messages
 
 Then watch replies and prepare to deliver. The goal is first paid response, not infinite posting.
-
