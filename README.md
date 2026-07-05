@@ -16,6 +16,11 @@
 - One small revision
 - First version within 24 hours after receiving materials
 
+## Samples
+
+- Small business page: https://MRhuang1106.github.io/fast-web-help/samples/cafe.html
+- README/demo refresh: https://MRhuang1106.github.io/fast-web-help/samples/readme-refresh.html
+
 ## How to request work
 
 Open a project request:

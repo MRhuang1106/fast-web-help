@@ -13,6 +13,12 @@ Relevant fit:
 - WordPress/Wix/Webflow page cleanup when the scope is clear
 - Fast copy/layout cleanup for small business pages
 
+Samples I can share after publishing:
+
+- Service page: https://MRhuang1106.github.io/fast-web-help/
+- Small business sample: https://MRhuang1106.github.io/fast-web-help/samples/cafe.html
+- README/demo sample: https://MRhuang1106.github.io/fast-web-help/samples/readme-refresh.html
+
 I can start today. If you share the reference page, text, and assets, I can send the first draft within 24 hours.
 
 ## 中等预算：Wix / WordPress landing page

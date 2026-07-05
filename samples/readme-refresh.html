@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sample: README Demo Refresh</title>
+  <meta name="description" content="Sample GitHub README and demo refresh page.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #111827;
+      --muted: #667085;
+      --line: #d8dee8;
+      --paper: #f8fafc;
+      --panel: #ffffff;
+      --accent: #2563eb;
+      --soft: #eff6ff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.55;
+    }
+
+    a { color: inherit; }
+
+    .shell {
+      width: min(1080px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 74px 0 48px;
+      background:
+        linear-gradient(90deg, rgba(17, 24, 39, .92), rgba(17, 24, 39, .72)),
+        url("https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1800&q=80") center / cover;
+      color: white;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 6px 10px;
+      border-radius: 8px;
+      background: rgba(239, 246, 255, .14);
+      border: 1px solid rgba(255, 255, 255, .2);
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    h1 {
+      max-width: 820px;
+      margin: 18px 0 14px;
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: .98;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 700px;
+      color: rgba(255, 255, 255, .86);
+      font-size: clamp(18px, 2vw, 22px);
+    }
+
+    section {
+      padding: 54px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: clamp(28px, 4vw, 44px);
+      letter-spacing: 0;
+    }
+
+    .section-lead {
+      margin: 0 0 26px;
+      max-width: 740px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 19px;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    pre {
+      margin: 0;
+      padding: 18px;
+      border-radius: 8px;
+      overflow: auto;
+      background: #0f172a;
+      color: #dbeafe;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .button {
+      display: inline-flex;
+      min-height: 46px;
+      align-items: center;
+      justify-content: center;
+      margin-top: 24px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 760;
+      border: 1px solid var(--ink);
+      background: var(--ink);
+      color: white;
+    }
+
+    @media (max-width: 820px) {
+      .grid, .two { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="shell">
+      <div class="eyebrow">Sample GitHub project refresh</div>
+      <h1>Make a repo explain itself in under 30 seconds.</h1>
+      <p class="lead">A focused README/demo refresh can turn a useful but unclear project into something visitors understand, try, and trust.</p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <div class="shell">
+        <h2>What changes</h2>
+        <p class="section-lead">This sample shows the kind of compact improvements that fit a starter task.</p>
+        <div class="grid">
+          <article class="card"><h3>Clear value</h3><p>Replace vague intros with one sentence that says who it helps and what it does.</p></article>
+          <article class="card"><h3>Fast start</h3><p>Add install, run, and demo steps that can be followed without guessing.</p></article>
+          <article class="card"><h3>Proof</h3><p>Add screenshots, status, examples, and a clean call to action.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell two">
+        <article>
+          <h2>Before</h2>
+          <pre># DataTool
+
+Utility scripts for data tasks.
+
+Install dependencies and run the app.
+
+TODO: add docs</pre>
+        </article>
+        <article>
+          <h2>After</h2>
+          <pre># DataTool
+
+Clean CSV files, validate rows, and export reports from one command.
+
+## Quick start
+
+npm install
+npm run demo
+
+## Use cases
+
+- remove duplicate rows
+- validate required fields
+- export summary JSON
+
+## Demo
+
+Input CSV -> validation report -> clean export</pre>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="shell">
+        <h2>Starter scope</h2>
+        <p class="section-lead">README refresh, simple GitHub Pages demo, screenshot placeholders, and one revision.</p>
+        <a class="button" href="../index.html">Back to Fast Web Help</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
