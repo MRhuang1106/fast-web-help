@@ -1,0 +1,42 @@
+name: 24-hour project request
+description: Request a small website, GitHub Pages page, README/demo refresh, or lightweight web fix.
+title: "[Project request]: "
+labels: ["client-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for your interest. Please share only non-sensitive project details here. Payment details and private contact can be confirmed after scope is accepted.
+  - type: dropdown
+    id: package
+    attributes:
+      label: Package
+      options:
+        - One-page site / link-in-bio ($49)
+        - Small business landing page ($99)
+        - Website fix / tiny automation ($79)
+        - Not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What should the page or fix accomplish?
+      description: Share the business/project, target audience, and desired call to action.
+      placeholder: Example: I need a simple menu page with a booking button for a small restaurant.
+    validations:
+      required: true
+  - type: textarea
+    id: materials
+    attributes:
+      label: Materials available
+      description: Text, logo, images, reference links, current site, or GitHub repository.
+    validations:
+      required: false
+  - type: textarea
+    id: deadline
+    attributes:
+      label: Deadline and notes
+      description: Mention timing, one must-have detail, and any constraints.
+    validations:
+      required: false
