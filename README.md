@@ -16,6 +16,12 @@
 - One small revision
 - First version within 24 hours after receiving materials
 
+## How to request work
+
+Open a project request:
+
+https://github.com/MRhuang1106/fast-web-help/issues/new?template=project-request.yml
+
 ## Contact
 
 - GitHub: https://github.com/MRhuang1106

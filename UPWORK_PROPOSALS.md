@@ -30,10 +30,25 @@ I am strongest on clean, simple pages that need to be usable quickly rather than
 
 I can begin today and share the first version within 24 hours after receiving the content/assets.
 
+## Elementor / WordPress 已有素材任务
+
+Hi, this is a good fit because you already have the content and reference sites.
+
+I can assemble the landing page in a clean, responsive way, keep the layout focused on the main CTA, and make sure it works on both mobile and desktop. I would start by confirming the reference style, then build the first version and send a short note with what was implemented.
+
+I can keep the first pass tight and deliver quickly. If the page needs custom integrations or extra revisions, I will call that out before expanding scope.
+
+## 24 小时 / 每页计价任务
+
+Hi, I can take the first page as a focused test task.
+
+I understand this is not just copy/paste HTML; the template needs adjustment so it renders full-width and keeps the same format. I can work page by page, verify the rendered result, and send a short handoff note for each page.
+
+I can start with one page, deliver within 24 hours, and continue if the result matches your standard.
+
 ## 不要这样写
 
 - 不要说 “I can do anything.”
 - 不要写很长的技术栈列表。
 - 不要承诺复杂后端、支付系统或 SEO 排名，除非任务明确要求且你能交付。
 - 不要对 `zero AI used` 的客户使用 AI 生成代码或文案。
-
