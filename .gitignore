@@ -23,4 +23,5 @@
 /prepare_submission.ps1
 /publish_to_github.ps1
 /sales_pipeline.ps1
+/submission_panel.html
 /verify_live_site.ps1
