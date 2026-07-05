@@ -28,6 +28,19 @@ function Invoke-Native {
   }
 }
 
+function Test-NativeSuccess {
+  param([scriptblock]$Command)
+
+  $previousPreference = $ErrorActionPreference
+  $ErrorActionPreference = "Continue"
+  try {
+    & $Command *> $null
+    return $LASTEXITCODE -eq 0
+  } finally {
+    $ErrorActionPreference = $previousPreference
+  }
+}
+
 if ($DryRun) {
   Write-Host "Dry run only. No remote changes will be made."
   Write-Host "Would create or reuse repo: $repo"
@@ -58,8 +71,7 @@ if ($changes) {
 }
 
 $repoExists = $false
-gh repo view $repo *> $null
-if ($LASTEXITCODE -eq 0) {
+if (Test-NativeSuccess { gh repo view $repo }) {
   $repoExists = $true
 }
 
@@ -67,15 +79,13 @@ if (-not $repoExists) {
   Invoke-Native "Could not create GitHub repo $repo." { gh repo create $repo --public --description $Description }
 }
 
-git remote get-url origin *> $null
-if ($LASTEXITCODE -ne 0) {
+if (-not (Test-NativeSuccess { git remote get-url origin })) {
   git remote add origin "https://github.com/$repo.git"
 }
 
 Invoke-Native "Could not push main to origin." { git push -u origin main }
 
-gh api "repos/$repo/pages" *> $null
-if ($LASTEXITCODE -ne 0) {
+if (-not (Test-NativeSuccess { gh api "repos/$repo/pages" })) {
   Invoke-Native "Could not enable GitHub Pages for $repo." { gh api -X POST "repos/$repo/pages" -f source.branch=main -f source.path="/" }
 }
 
