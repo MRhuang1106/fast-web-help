@@ -42,11 +42,17 @@
 
 结论：GitHub bounty 可以继续监控，但今天不要把主要时间压在这里。真实成交概率更高的是 Upwork 小任务和主动外联。
 
+## 2026-07-05 更新
+
+- Upwork website development currently shows thousands of open web developer jobs and multiple "posted 1 day ago" small website tasks.
+- Upwork landing page jobs currently show many landing page roles, including $50-$100 fixed-price one-page jobs that match this offer.
+- Hacker News has an active July 2026 Freelancer thread where posts should start with `SEEKING WORK` or `SEEKING FREELANCER`.
+- I added a more specific target list in `UPWORK_TARGETS_2026-07-05.md`.
+
 ## 今天的动作顺序
 
-1. 替换 `index.html` 里的邮箱。
-2. 发布 GitHub Pages。
-3. Upwork 投 5 个小任务。
-4. HN Freelancer 线程发 `SEEKING WORK`。
-5. 用 `LEAD_TRACKER.csv` 记录 20 个主动外联对象。
-
+1. 发布 GitHub Pages。
+2. Upwork 投 5 个小任务。
+3. HN Freelancer 线程发 `SEEKING WORK`。
+4. 用 `LEAD_TRACKER.csv` 记录 20 个主动外联对象。
+5. 每 24 小时跟进有回复或看过资料页的人。

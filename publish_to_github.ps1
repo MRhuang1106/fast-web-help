@@ -18,12 +18,40 @@ if (-not (Test-Path ".git")) {
   git branch -M main
 }
 
-git add .
-git commit -m "Launch fast web help page"
+$changes = git status --porcelain
+if ($changes) {
+  git add .
+  git commit -m "Launch fast web help page"
+}
 
-gh repo create $RepoName --public --source . --remote origin --push --description $Description
-gh api -X POST "repos/MRhuang1106/$RepoName/pages" -f source.branch=main -f source.path="/"
-gh label create "client-request" --repo "MRhuang1106/$RepoName" --color "0f766e" --description "Potential paid project request" --force
+$repo = "MRhuang1106/$RepoName"
+$repoExists = $false
+try {
+  gh repo view $repo | Out-Null
+  $repoExists = $true
+} catch {
+  $repoExists = $false
+}
+
+if (-not $repoExists) {
+  gh repo create $RepoName --public --description $Description
+}
+
+try {
+  git remote get-url origin | Out-Null
+} catch {
+  git remote add origin "https://github.com/$repo.git"
+}
+
+git push -u origin main
+
+try {
+  gh api "repos/$repo/pages" | Out-Null
+} catch {
+  gh api -X POST "repos/$repo/pages" -f source.branch=main -f source.path="/"
+}
+
+gh label create "client-request" --repo $repo --color "0f766e" --description "Potential paid project request" --force
 
 Write-Host "Published. GitHub Pages usually appears after 1-3 minutes:"
 Write-Host "https://MRhuang1106.github.io/$RepoName/"
