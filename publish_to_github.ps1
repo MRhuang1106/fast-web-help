@@ -86,7 +86,7 @@ if (-not (Test-NativeSuccess { git remote get-url origin })) {
 Invoke-Native "Could not push main to origin." { git push -u origin main }
 
 if (-not (Test-NativeSuccess { gh api "repos/$repo/pages" })) {
-  Invoke-Native "Could not enable GitHub Pages for $repo." { gh api -X POST "repos/$repo/pages" -f source.branch=main -f source.path="/" }
+  Invoke-Native "Could not enable GitHub Pages for $repo." { gh api -X POST "repos/$repo/pages" -f "source[branch]=main" -f "source[path]=/" }
 }
 
 Invoke-Native "Could not create or update client-request label." { gh label create "client-request" --repo $repo --color "0f766e" --description "Potential paid project request" --force }
