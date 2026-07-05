@@ -48,11 +48,12 @@
 - Upwork landing page jobs currently show many landing page roles, including $50-$100 fixed-price one-page jobs that match this offer.
 - Hacker News has an active July 2026 Freelancer thread where posts should start with `SEEKING WORK` or `SEEKING FREELANCER`.
 - I added a more specific target list in `UPWORK_TARGETS_2026-07-05.md`.
+- I added copy-paste application drafts in `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md`.
 
 ## 今天的动作顺序
 
 1. 发布 GitHub Pages。
-2. Upwork 投 5 个小任务。
+2. Upwork 按 `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md` 的顺序投 5 个小任务。
 3. HN Freelancer 线程发 `SEEKING WORK`。
 4. 用 `LEAD_TRACKER.csv` 记录 20 个主动外联对象。
 5. 每 24 小时跟进有回复或看过资料页的人。

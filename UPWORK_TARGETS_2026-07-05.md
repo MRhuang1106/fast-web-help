@@ -8,6 +8,7 @@ Use these as the first application batch after the GitHub Pages service page is 
    - URL: https://www.upwork.com/freelance-jobs/apply/Website-landing-page_~022065698359689020915/
    - Why it fits: one-page landing page, mobile-friendly, fast turnaround, AI tools allowed.
    - Pitch angle: "I can show a GitHub Pages starter page and deliver a clean first version fast."
+   - Current priority: low; use only after fresher or less crowded leads.
 
 2. Simple WordPress Landing Page with Elementor
    - URL: https://www.upwork.com/freelance-jobs/apply/Simple-WordPress-Landing-Page-with-Elementor_~022073436701598244416/
@@ -64,3 +65,7 @@ Use these as the first application batch after the GitHub Pages service page is 
 - Hacker News July 2026 Freelancer thread
   - URL: https://news.ycombinator.com/item?id=48749020
   - Post `HN_SEEKING_WORK_POST.md` after GitHub Pages is live.
+
+## Copy-paste drafts
+
+Use `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md` for task-specific proposals and opening questions.
