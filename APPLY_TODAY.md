@@ -1,68 +1,59 @@
-# 今天优先做的投递清单
+# Apply Today
 
-当前日期：2026-07-05。
+Current date: 2026-07-05.
 
-## 1. Upwork：投 5 个小网站任务
+This is the short action list for getting the first paid reply.
 
-入口：https://www.upwork.com/freelance-jobs/website-development/
+## Main path
 
-我看到 Upwork 当前网站开发页显示有 4,837 个 Web Developer jobs 样例，并且页面上有多条“Posted 1 day ago”的小任务。最适合第一单的是这些类型：
+1. Publish GitHub Pages.
+2. Apply to 5 Upwork jobs using `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md`.
+3. Post `SEEKING WORK` in the HN Freelancer thread using `HN_SEEKING_WORK_POST.md`.
+4. Send 10 direct outreach messages using `OUTREACH_MESSAGES.md`.
+5. Track every lead in `LEAD_TRACKER.csv`.
+6. Use `CLOSING_AND_PAYMENT.md` as soon as anyone replies.
 
-- `$20` fixed price：Add 3 Location Pages to Existing WordPress Website
-- `$50` fixed price：Funnel Setup
-- `$315` fixed price：Wix landing page / custom UI
-- `$1,000` fixed price：WordPress landing pages/templates
-- 作者页、活动页、菜单页、预约页这类内容型页面
+## Why this order
 
-筛选规则：
+- GitHub Pages gives you a public proof link.
+- Upwork has the clearest payment/escrow path.
+- HN can produce high-quality inbound replies, but may be sparse.
+- Direct outreach gives you control instead of waiting for platform algorithms.
 
-- 优先 fixed-price、小范围、1 天内发布。
-- 避开“Expert”但只给很低预算的任务，除非你只想拿第一条评价。
-- 每个提案都附上你的服务页链接：`https://MRhuang1106.github.io/fast-web-help/`，如果还没发布，先发本地截图或 GitHub repo。
+## Best first service
 
-## 2. Hacker News：发一个 SEEKING WORK
+Sell a small, fixed-scope starter task:
 
-入口：https://news.ycombinator.com/item?id=48749020
+- one-page website / link-in-bio: $49
+- README/demo refresh: $79
+- small business landing page: $99
+- one focused website fix: $79
 
-这是 2026 年 7 月的 Freelancer / Seeking freelancer 线程。规则是开头写 `SEEKING WORK` 或 `SEEKING FREELANCER`、位置、是否远程。
+Keep the first job narrow. The goal is a real paid client and a usable testimonial.
 
-建议发一个很窄的服务，不要写“全栈什么都做”。
+## Current target files
 
-## 3. HN 小网站线索：谨慎处理
+- Launch timeline: `LAUNCH_90_MINUTE_RUNBOOK.md`
+- Platform profile copy: `PLATFORM_PROFILE_COPY.md`
+- Upwork target list: `UPWORK_TARGETS_2026-07-05.md`
+- Custom proposals: `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md`
+- Closing and payment: `CLOSING_AND_PAYMENT.md`
 
-线索：https://news.ycombinator.com/item?id=48754925
+## Skip for now
 
-有人在 2026 年 7 月 HN hiring thread 里找 freelancer 做 math research website，远程、小型基础网站，并留下邮箱。
+- GitHub bounty leads where the original repo no longer resolves.
+- Account recovery jobs.
+- Jobs that require zero AI assistance while you are using Codex.
+- Very low-pay jobs unless the review is worth more than the money.
+- Broad fixed-price builds with unclear scope.
 
-重要限制：对方明确写了 `zero ai used`。因为你现在是在用 Codex 辅助推进，只有在你愿意完全手写、不用 AI 生成代码和文案时才联系这个线索。否则跳过，别为了第一单破坏信任。
+## If someone replies
 
-## 4. GitHub bounty：暂不作为主线
+Do not over-explain. Send a small scope:
 
-我核验到一个 BountyScout 提示的 `$250` `fetchWithRetry` issue，但原仓库 `standujar/radar-e2e-fixture` 已经无法通过 GitHub API 解析，可能已删除或变私有。
+```text
+I can do a first usable version within 24 hours for $49. Scope would include one page or one focused fix, mobile-friendly layout, clear CTA/contact flow, source files, and one small revision.
+```
 
-结论：GitHub bounty 可以继续监控，但今天不要把主要时间压在这里。真实成交概率更高的是 Upwork 小任务和主动外联。
+Then ask for materials and payment/escrow.
 
-## 2026-07-05 更新
-
-- Upwork website development currently shows thousands of open web developer jobs and multiple "posted 1 day ago" small website tasks.
-- Upwork landing page jobs currently show many landing page roles, including $50-$100 fixed-price one-page jobs that match this offer.
-- Hacker News has an active July 2026 Freelancer thread where posts should start with `SEEKING WORK` or `SEEKING FREELANCER`.
-- I added a more specific target list in `UPWORK_TARGETS_2026-07-05.md`.
-- I added copy-paste application drafts in `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md`.
-
-## 今天的动作顺序
-
-1. 发布 GitHub Pages。
-2. Upwork 按 `CUSTOM_APPLICATION_DRAFTS_2026-07-05.md` 的顺序投 5 个小任务。
-3. HN Freelancer 线程发 `SEEKING WORK`。
-4. 用 `LEAD_TRACKER.csv` 记录 20 个主动外联对象。
-5. 每 24 小时跟进有回复或看过资料页的人。
-
-## 有人回复后
-
-不要重新发明话术，直接用 `CLOSING_AND_PAYMENT.md`：
-
-- 先确认小范围。
-- 固定价格 `$49` 起。
-- 明确 24 小时第一版和一次小修改。
-- 通过对方信任的方式收款或走平台托管。
