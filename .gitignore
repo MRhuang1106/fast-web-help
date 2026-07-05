@@ -14,11 +14,13 @@
 /PLATFORM_PROFILE_COPY.md
 /PUBLISH_AUTHORIZATION_CHECKLIST.md
 /SALES_PIPELINE.csv
+/SUBMISSION_QUEUE.md
 /UPWORK_PROPOSALS.md
 /UPWORK_TARGETS_2026-07-05.md
 /delivery/
 /new_client_project.ps1
 /preflight_check.ps1
+/prepare_submission.ps1
 /publish_to_github.ps1
 /sales_pipeline.ps1
 /verify_live_site.ps1
