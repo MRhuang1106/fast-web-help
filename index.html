@@ -110,6 +110,12 @@
       margin-top: 28px;
     }
 
+    .signal {
+      margin-top: 14px;
+      color: #394150;
+      font-size: 15px;
+    }
+
     .button {
       display: inline-flex;
       align-items: center;
@@ -254,6 +260,27 @@
       padding: 44px 0;
     }
 
+    .brief {
+      background: #f4f8f7;
+    }
+
+    .brief-box {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      align-items: center;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      box-shadow: var(--shadow);
+    }
+
+    .brief-box p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
     .contact .section-lead { color: #d4d4d4; }
     .contact a { color: white; }
 
@@ -261,6 +288,7 @@
       header { min-height: 84vh; }
       .nav-links { display: none; }
       .grid, .proof { grid-template-columns: 1fr; }
+      .brief-box { grid-template-columns: 1fr; }
       section { padding: 42px 0; }
       h1 { font-size: clamp(40px, 13vw, 62px); }
     }
@@ -274,6 +302,7 @@
         <div class="nav-links">
           <a href="#offer">Offers</a>
           <a href="#process">Process</a>
+          <a href="#start">Start</a>
           <a href="#contact">Contact</a>
         </div>
       </div>
@@ -286,6 +315,7 @@
         <a class="button" href="https://github.com/MRhuang1106/fast-web-help/issues/new?template=project-request.yml">Request a $49 starter task</a>
         <a class="button secondary" href="#proof">See what you get</a>
       </div>
+      <div class="signal">Fastest start: send the goal, one reference link, and the main CTA. I will confirm scope before payment details.</div>
     </div>
   </header>
 
@@ -325,6 +355,18 @@
           <div class="step"><div><strong>Send the basics</strong><span>Goal, rough text, images or logo if available, contact method, and one reference page.</span></div></div>
           <div class="step"><div><strong>Get a same-day preview</strong><span>I build the first usable version before polishing details.</span></div></div>
           <div class="step"><div><strong>Launch and hand off</strong><span>You get the live link, source files, and one small revision.</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="brief" id="start">
+      <div class="shell">
+        <div class="brief-box">
+          <div>
+            <h2>Ready to start a small task?</h2>
+            <p>Use this if you need one focused page or fix, not a full rebuild. A good request includes the page goal, a reference link, available text/assets, and the action visitors should take.</p>
+          </div>
+          <a class="button" href="https://github.com/MRhuang1106/fast-web-help/issues/new?template=project-request.yml">Send project brief</a>
         </div>
       </div>
     </section>
